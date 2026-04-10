@@ -117,7 +117,10 @@ ul li:hover, i:hover{
     padding: 10px;
     width: 300px;
     height: 360px;
-    background-color: var(--card-background-color);
+    box-shadow:
+        0 0px 10px var(--card-background-color),
+        0 0 10px rgba(31, 111, 235, 0.25);
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -137,4 +140,68 @@ ul li:hover, i:hover{
     width: 260px;
     height: 260px;
     object-fit:contain;
+}
+
+/* Secção skills */
+.skills-section {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+    align-items: center;
+    scroll-margin-top: 230px;
+}
+
+.skills-section img {
+    height: 70px;
+    width: 70px;
+}
+
+.caixas-tecnologias {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    padding: 30px;
+    box-shadow:
+        0 0px 10px var(--card-background-color),
+        0 0 10px rgba(31, 111, 235, 0.25);
+    border-radius: 15px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.icones_caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.icone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.icone span {
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.icone img:hover{
+    transform: scale(1.05);
 }
