@@ -14,6 +14,7 @@ ul, li, a{
     --text-primary-color:#333;
     --text-secondary-color:#1b1b1b;
     --secondary-background-color:#f1f6fa;
+    --card-background-color:#6e6e6eb3;
 }
 
 body{
@@ -86,4 +87,54 @@ ul li:hover, i:hover{
     width: 300px;
     height: auto;
     filter: grayscale(60%);
+}
+
+/* Secção Projects */
+.section-title{
+    color: var(--text-primary-color);
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.projects-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    padding: 10px 30px;
+    gap: 40px;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    color: var(--text-primary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px;
+    width: 300px;
+    height: 360px;
+    background-color: var(--card-background-color);
+    text-align: center;
+}
+
+.project-card a{
+    padding: 10px 15px;
+    background-color: var(--text-primary-color);
+    color: var(--body-background-color);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.project-card a:hover{
+    background-color: var(--text-secondary-color);
+}
+
+.project-card img{
+    width: 260px;
+    height: 260px;
+    object-fit:contain;
 }
