@@ -65,7 +65,10 @@ ul li:hover, i:hover{
 /* Secção About */
 .about-section{
     display: flex;
-    background-color: var(--secondary-background-color);
+    box-shadow:
+        0 0px 10px var(--card-background-color),
+        0 0 10px rgba(31, 111, 235, 0.25);
+    border-radius: 15px;
     width: 100%;
     padding: 10px 30px;
     align-items: center;
