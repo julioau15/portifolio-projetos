@@ -13,6 +13,7 @@ ul, li, a{
     --body-background-color:#ffffff;
     --text-primary-color:#333;
     --text-secondary-color:#1b1b1b;
+    --secondary-background-color:#f1f6fa;
 }
 
 body{
@@ -20,6 +21,7 @@ body{
     height: 100vh;
     background-color: var(--body-background-color);
     color: var(--text-primary-color);
+    padding: 0 30px;
 }
 
 header{
@@ -57,4 +59,31 @@ ul li:hover, i:hover{
     color: var(--text-secondary-color);
     transform: scale(1.1);
     transition: all ease-in-out;
+}
+
+/* Secção About */
+.about-section{
+    display: flex;
+    background-color: var(--secondary-background-color);
+    width: 100%;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Poppins, sans-serif;
+}
+
+.about-section h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.about-section h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.perfil-img img{
+    width: 300px;
+    height: auto;
+    filter: grayscale(60%);
 }
