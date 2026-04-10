@@ -208,3 +208,34 @@ ul li:hover, i:hover{
 .icone img:hover{
     transform: scale(1.05);
 }
+
+/* Footer */
+.contatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    background: var(--cor-card);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.contato-container h2, .horarios h2 {
+    margin-bottom: 20px;
+    color: var(--cor-destaque);
+}
+
+footer {
+    padding: 30px;
+    text-align: left;
+    box-shadow:
+        0 0px 10px var(--card-background-color),
+        0 0 10px rgba(31, 111, 235, 0.25);
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: var(--text-primary-color);
+    margin-top:30px;
+}
+
+footer .social-container i{
+    color: var(--text-primary-color);
+}
