@@ -209,33 +209,95 @@ ul li:hover, i:hover{
     transform: scale(1.05);
 }
 
-/* Footer */
-.contatos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    background: var(--cor-card);
-    padding: 50px;
-    border-radius: 10px;
+/* Secção experience */
+.experience-section {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
-.contato-container h2, .horarios h2 {
-    margin-bottom: 20px;
-    color: var(--cor-destaque);
+.experience-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-footer {
-    padding: 30px;
-    text-align: left;
+.experience-card {
+    width: 300px;
+    padding: 20px;
     box-shadow:
         0 0px 10px var(--card-background-color),
         0 0 10px rgba(31, 111, 235, 0.25);
     border-radius: 15px;
-    font-size: 0.9rem;
-    color: var(--text-primary-color);
-    margin-top:30px;
 }
 
-footer .social-container i{
-    color: var(--text-primary-color);
+.experience-card h3 {
+    margin-bottom: 10px;
+}
+
+.experience-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Footer */
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow:
+        0 0px 10px var(--card-background-color),
+        0 0 10px rgba(31, 111, 235, 0.25);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-info,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-info h2,
+.footer-social h2 {
+    font-size: 20px;
+}
+
+.footer-info p {
+    font-size: 14px;
+}
+
+.footer-social .social-container {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social i {
+    font-size: 22px;
+    transition: transform 0.2s ease;
+}
+
+.footer-social i:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
 }
