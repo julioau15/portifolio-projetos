@@ -247,7 +247,6 @@ ul li:hover, i:hover{
 }
 
 /* Footer */
-/* Footer */
 footer {
     margin-top: 40px;
     padding: 30px;
@@ -300,4 +299,97 @@ footer {
     border-top: 1px solid #ccc;
     text-align: center;
     font-size: 12px;
+}
+
+/*  MOBILE  */
+@media (max-width: 768px){
+
+    body{
+        padding: 0 15px;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .about-section{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-section h1{
+        font-size: 40px;
+    }
+
+    .about-section h2{
+        font-size: 24px;
+    }
+
+    .perfil-img img{
+        width: 200px;
+    }
+
+    .projects-section{
+        grid-template-columns: 1fr;
+    }
+
+    .project-card{
+        width: 100%;
+        height: auto;
+    }
+
+    .project-card img{
+        width: 100%;
+        height: auto;
+    }
+
+    .experience-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/*  TABLET  */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .projects-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section{
+        gap: 20px;
+    }
+
+    .perfil-img img{
+        width: 250px;
+    }
+}
+
+/*  DESKTOP GRANDE  */
+@media (min-width: 1200px){
+
+    body{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .projects-section{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
